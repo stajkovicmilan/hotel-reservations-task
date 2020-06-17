@@ -3,19 +3,30 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "tests": "jest"
+  },
   "author": "Milan Stajkovic",
   "license": "ISC",
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverage": true,
+    "collectCoverageFrom": [ "src/**/*.ts"],
+    "roots": [
+      "<rootDir>/src"
+    ],
+    "transform": {
+      "^.+\\.ts?$": "ts-jest"
+    }
+  },
   "devDependencies": {
-    "@types/lowdb": "^1.0.9",
+    "@types/jest": "^26.0.0",
     "@types/node": "^14.0.6",
+    "jest": "^26.0.1",
+    "ts-jest": "^26.1.0",
     "tslint": "^6.1.2"
   },
   "dependencies": {
-    "typescript": "^3.9.3",
-    "lowdb": "^1.0.0",
-    "gulp": "^4.0.2",
-    "gulp-clean": "^0.4.0",
-    "gulp-tslint": "^8.1.4"
+    "typescript": "^3.9.3"
   }
 }
