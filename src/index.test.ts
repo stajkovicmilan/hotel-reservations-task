@@ -1,4 +1,4 @@
-import { HotelReservations } from "./HotelReservations";
+import { HotelReservations } from "./core/HotelReservations";
 
 
 describe('booking', () => {
@@ -14,6 +14,6 @@ describe('booking', () => {
 
   it('create Booking class with given size', () => {
     const hotel = new HotelReservations(1);
-    expect(hotel.hotelSize).toEqual(1);
+    expect(hotel.hotel.size).toEqual(1);
   });
 });
