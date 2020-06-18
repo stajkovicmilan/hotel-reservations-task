@@ -1,4 +1,4 @@
-import { IHotelReservations, ReservationResultType } from "../models/IHotelReservations";
+import { IHotelReservations, ReservationResultType } from "./IHotelReservations";
 import { IHotel, IRoom } from "../models/IHotel";
 
 export class HotelReservations implements IHotelReservations {

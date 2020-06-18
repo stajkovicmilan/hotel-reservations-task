@@ -1,5 +1,5 @@
 import { HotelReservations } from "./core/HotelReservations";
-import { ReservationResultType } from "./models/IHotelReservations";
+import { ReservationResultType } from "./core/IHotelReservations";
 
 
 describe('Booking Requests Test', () => {
