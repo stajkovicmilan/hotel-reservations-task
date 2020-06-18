@@ -1,7 +1,7 @@
 # CodingChallenge
 ## hotel-reservations-task
 
-For this project was used [Node.js](https://nodejs.org/) version 12.13.0 and [npm] (https://www.npmjs.com/) version 6.12.0.
+For this project was used [Node.js](https://nodejs.org/) version 12.13.0 and [npm](https://www.npmjs.com/) version 6.12.0.
 
 ## Testing Application
 
