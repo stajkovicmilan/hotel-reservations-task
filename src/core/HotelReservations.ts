@@ -9,10 +9,10 @@ export class HotelReservations implements IHotelReservations {
     private daysRangeLimits = [0, 364]
 
     constructor (public size: number) {
-        if (size > this.minMaxHotelSize[0] && size < this.minMaxHotelSize[1]) {
-            throw new Error(`Hotel size must be in range [${this.minMaxHotelSize[0]}, ${this.minMaxHotelSize[1]}]`);
-        } else {
+        if (size >= this.minMaxHotelSize[0] && size <= this.minMaxHotelSize[1]) {
             this.hotel = this.setupDefaultHotelValues(size);
+        } else {
+            throw new Error(`Hotel size must be in range [${this.minMaxHotelSize[0]}, ${this.minMaxHotelSize[1]}]`);
         }
     }
 
